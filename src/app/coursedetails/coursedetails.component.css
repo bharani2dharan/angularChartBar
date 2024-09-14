@@ -1,0 +1,63 @@
+.course-content{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    border: 1px solid #dfdfdf;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+}
+.course-details{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    ul{
+        font-size: 12px;
+        padding: 0px !important;
+        margin: 0px !important;
+        font-family: sans-serif;
+    }
+    li{
+        display: flex;
+        justify-content: flex-start;
+        gap: 10px;
+        padding: 5px 0px;
+        list-style-type: none;
+        font-family: sans-serif;
+        .value{
+            font-weight: 600;
+            font-family: sans-serif;
+        }
+    }
+}
+.course-heading{
+    font-size: 14px;
+    font-weight: 700;
+    font-family: sans-serif;
+}
+.course-data{
+    font-size: 12px;
+    font-family: sans-serif;
+}
+
+.outcome-content{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 8px;
+    width: auto;
+    font-family: sans-serif;
+
+    .outComeData{
+        font-size: 11px;
+       background-color: rgb(128, 151, 93); 
+       border-radius: 8px;
+       padding: 5px 10px;
+    }
+    .mapData{
+        font-size: 11px;
+           background-color: rgb(107, 155, 189); 
+           border-radius: 8px;
+           padding: 5px 10px;
+        }
+}

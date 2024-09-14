@@ -1,0 +1,22 @@
+<div class="course-content">
+    <div *ngFor="let item of message;let i=index"> 
+    <div *ngIf="item.type == 1" class="course-details" [ngStyle]="{'border-top': i > 0 ? '1px solid #dfdfdf' : 'none','padding-top':'10px'}">
+        <span class="course-heading">{{item.heading}}</span>
+        <span class="course-data">{{item.content}}</span>
+    </div>
+    <div *ngIf="item.type === 2" class="course-details" [ngStyle]="{'border-top': i > 0 ? '1px solid #dfdfdf' : 'none','padding-top':'10px'}">
+        <span class="course-heading">{{item.heading}}</span>
+        <ul>
+            <li *ngFor="let credit of item.typeOfCredits"><span>{{ credit.type }}</span><span> - </span><span class="value">{{ credit.score }}</span></li>
+          </ul>
+    </div>
+    <div *ngIf="item.type == 3" class="course-details" [ngStyle]="{'border-top': i > 0 ? '1px solid #dfdfdf' : 'none','padding-top':'10px'}">
+        <span class="course-heading">{{item.heading}}</span>
+        <div class="outcome-content">
+            <div *ngFor="let outcome of item.allOutcomes">
+                <span [ngClass]="item.colorType == 1 ? 'outComeData' : 'mapData'">{{outcome}}</span>
+            </div>
+        </div>
+    </div>
+    </div>
+</div>

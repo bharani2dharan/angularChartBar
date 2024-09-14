@@ -1,0 +1,27 @@
+::ng-deep .title{
+    font-size: 14px;
+    font-weight: 700;
+    font-family: sans-serif;
+}
+.header-content{
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    margin: 10px;
+    div{
+        background-color: #9fa0a1;
+        padding: 5px 10px;
+        color: #36454f;
+        display: flex;
+        justify-content: space-between;
+        gap: 16px;
+        border-radius: 4px;
+        font-size: 12px;
+        font-weight: 600;
+        align-items: center;
+        font-family: sans-serif;
+        span:first-child {
+           font-size: 10px;
+          }
+    }
+}
